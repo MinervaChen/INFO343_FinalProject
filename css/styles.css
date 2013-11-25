@@ -1,0 +1,63 @@
+/*INFO 343 Final Project
+Minerva Chen, Warner Chen, James Prow, Lina Thach*/
+/* Google web fonts 'Open Sans' (italic and normal) and 'Boogaloo' */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Boogaloo);
+
+/* reset CSS file to reset browser default styling to a consistent starting point */
+@import url(reset.css);
+
+body {
+    background-image: url(../img/background.jpg);
+    background-repeat: repeat;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    padding: 10px;
+}
+p {
+    margin: 5px;
+    font-style: bold;
+}
+.head {
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+.footer {
+    border-width: 2px;   
+    border-top-style: groove;
+    margin-top: 10px;
+    border-color: purple;
+    font-size: 90%;
+    font-style: italic;
+    color: white;
+    text-shadow: 0.05em .1em black;
+    overflow: hidden;
+}
+
+.navbar {
+    font-variant: small-caps;
+    text-align: center;
+}
+
+.logo{
+    background-color: black;
+    opacity: .9;
+}
+
+.logo:hover{
+    opacity: 1;
+}
+
+.content-box{
+    overflow: hidden;
+    margin: auto;
+    width: 70%;
+    padding: 20px;
+}
+.row{
+    margin: 0 auto;
+    font-variant: small-caps;
+    color: white;
+}
