@@ -34,6 +34,7 @@ p {
     color: white;
     text-shadow: 0.05em .1em black;
     overflow: hidden;
+    background-image: url(../img/background.jpg);
 }
 
 .navbar {
@@ -53,7 +54,7 @@ p {
 .content-box{
     overflow: hidden;
     margin: auto;
-    width: 70%;
+    width: 80%;
     padding: 20px;
 }
 .row{
