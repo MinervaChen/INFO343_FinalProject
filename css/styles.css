@@ -24,6 +24,22 @@ p {
     text-align: center;
 }
 
+.container {
+    background-color: white;
+}
+
+.volunteer-template {
+    display: none;
+}
+
+.volunteer {
+    float: left;
+}
+
+.volunteer img {
+    float: left;
+}
+
 .footer {
     border-width: 2px;   
     border-top-style: groove;
