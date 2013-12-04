@@ -99,3 +99,52 @@ p {
     font-variant: small-caps;
     color: white;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*All the CSS for the schedule page*/
+
+.shift {
+    padding: 10px;
+    margin: 5%;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.pre-scrollable {
+    max-height: 200px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 36px;
+    padding: 10px;
+    text-align: center;
+}
+
+h2 {
+    font-style: italic;
+    font-size: 24px;
+    padding: 10px;
+}
+
+li {
+    padding: 5px;
+    padding-left: 10px;
+}
+
+.button {
+    padding: 40px;
+    float: right;
+}
