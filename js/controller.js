@@ -21,4 +21,6 @@ $(function(){
 	directoryView.on('volunteerInfo', function(data) {
 		alert("This currently does nothing!");
 	});
+
+	
 });

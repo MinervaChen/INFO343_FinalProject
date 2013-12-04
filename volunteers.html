@@ -29,17 +29,75 @@
 		      	<li><a href="index.html">Home</a></li>
 		      <li><a href="schedule.html">Schedule</a></li>
 		      <li><a href="calender.html">Calender</a></li>
-		      <li class="active"><a href="volunteers.html">Volunteers</a></li>
+		      <li class="dropdown active">
+		      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Staff <b class="caret"></b></a>
+		        	<ul class="dropdown-menu">
+		          		<li><a href="volunteers.html">Volunteer</a></li>
+		          		<li><a href="employees.html">Employee</a></li>
+		          		<li><a href="otherpeople.html">Other Important People</a></li>
+		        	</ul>
+		      		</li>
+		    </ul>
 		    <form class="navbar-form navbar-left" role="search">
 		      <div class="form-group">
 		        <input type="text" class="form-control" placeholder="Search">
 		      </div>
 		      <button type="submit" class="btn btn-default">Submit</button>
 		    </form>
-		  </div> <!-- /.navbar-collapse -->
+		  </div><!-- /.navbar-collapse -->
 		</nav>
 		<div class="voluneers-container"></div>
 	</div> <!-- .container -->
+
+	<div class="modal fade" id="editInformation" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                                <div class="modal-content">
+                                        <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                                        &times;
+                                                </button>
+                                                <h4 class="modal-title" id="modalTitle">EDIT VOLUNTEER INFORMATION</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                                <form method="post" action="http://dawgpizza.com/orders/" class="address-form">
+                                                        <div class="form-group">
+                                                                <label for="name">Name</label>
+                                                                <input type="text" class="form-control form-name">
+                                                        </div>
+                                                        <div class="form-group">
+                                                                <label for="title">Title</label>
+                                                                <input type="text" class="form-control form-line1" placeholder="Position held at Pacific Science Center">
+                                                        </div>
+                                                        <div class="row">
+                                                                <div class="form-group col-xs-3">
+                                                                        <label for="age">Age</label>
+                                                                        <input type="number" class="form-control form-zip" min="5" max="99">
+                                                                </div>
+                                                                <div class="form-group col-xs-6">
+                                                                        <label for="phone">Phone Number</label>
+                                                                        <input type="text" class="form-control form-phone" placeholder="Phone Number">
+                                                                </div>
+                                                                <div class="form-group col-xs-6">
+                                                                        <label for="phone">Email</label>
+                                                                        <input type="text" class="form-control form-phone">
+                                                                </div>
+                                                        </div>
+                                                        <input type="hidden" name="cart" id="jsonForm"/>
+                                                        <button type="submit" class="hidden-submit"></button>
+                                                </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                        Close
+                                                </button>
+                                                <button type="button" class="btn btn-primary finalSubmitButton">
+                                                        Update Volunteer
+                                                </button>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+
 	
 	<div class="templates">
 		<div class="volunteer-template volunteer">
@@ -50,7 +108,7 @@
 			<p class="age"></p>
 			<p class="email"></p>
 			<p class="phone"></p>
-			<button type="button" class="btn btn-default more-info">More Info</button>
+			<button type="button" class="btn btn-default more-info">More Info</button><button type="button" class="btn btn-default edit"><span class="glyphicon glyphicon-cog"></span></button>
 
 		</div> <!-- movie template -->
 	</div> <!-- .templates -->

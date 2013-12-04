@@ -18,6 +18,10 @@ function createDirectoryView(config) {
 			var eventData = button.attr('data-volunteer-id');
 			view.trigger('volunteerInfo', eventData);
 		});
+
+		this.container.find('.edit').click(function(){
+ 			$("#editInformation").modal();
+		});
 	};// afterRender()
 
 	// auto-render if we have a model
