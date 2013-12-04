@@ -22,5 +22,21 @@ $(function(){
 		alert("This currently does nothing!");
 	});
 
-	
+	directoryView.on('volunteerEdit', function(data) {
+		var volunteer = volunteerModel.getIetm(data.volunteerID)
+		if (!volunteer)
+			throw 'Invalid volunteer "' + volunteerID + '"!';
+
+		volunteerModel.addItem({
+	        pic: volunteer.pic,
+	        name: volunteer.name,
+	        title: volunteer.title,
+	        age: volunteer.age,
+	        email: volunteer.email,
+	        phone: volunteer.phone
+	    });
+
+	})
+
+
 });
