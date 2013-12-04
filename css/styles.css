@@ -18,6 +18,13 @@ p {
     margin: 5px;
     font-style: bold;
 }
+.modal-content{
+    color: white;
+    background-color: black;
+}
+.hidden-submit{
+    display: none;
+}
 .head {
     margin: 5px;
     padding: 5px;
