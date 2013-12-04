@@ -1,6 +1,6 @@
 [
     {
-        "pic": "img/avatar.png",
+        "pic": "img/stearns.jpg",
         "name": "Bob Ross",
         "title": "Painter",
         "age": 67,
@@ -8,7 +8,7 @@
         "phone": "(425) 337-2726"
     },
     {
-        "pic": "img/avatar.png",
+        "pic": "img/stearns.jpg",
         "name": "Nick Cage",
         "title": "Actor",
         "age": 43,
@@ -16,7 +16,7 @@
         "phone": "(425) 555-2526"
     },
     {
-        "pic": "img/avatar.png",
+        "pic": "img/stearns.jpg",
         "name": "Tom Jones",
         "title": "Singer",
         "age": 70,

@@ -1,79 +1,88 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<!-- tells the browser this file was saved in the UTF-8 character encoding -->
-	<meta charset="UTF-8">
-	<!-- tells the browser to get style information from styles.css in our 'css' sub-directory -->
-	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/styles.css">
-	<title>Pacific Science Center Schedule Organizer</title>
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<!-- tells the browser this file was saved in the UTF-8 character encoding -->
+		<meta charset="UTF-8">
+		<!-- tells the browser to get style information from styles.css in our 'css' sub-directory -->
+		<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/styles.css">
+		<title>Pacific Science Center Schedule Organizer</title>
 		<!-- REPLACE 'your uw net id' with your UW net id -->
-	<meta name="author" content="INFO 343 Final Project">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-     <script src="js/mainFunctions.js"></script>
+		<meta name="author" content="INFO 343 Final Project">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<script src="js/mainFunctions.js"></script>
 
-    <!-- Bootstrap JavaScript (if we need it) -->
-    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+		<!-- Bootstrap JavaScript (if we need it) -->
+		<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 
-</head>
-<body>
-	<div class = "head">
-		<a href="index.html"> <img class = "logo" src="img/logo2.jpg" alt="LOGO" height="230" width="1000"></a>
-	
-	<div class = "container">
-		<nav class="navbar navbar-default" role="navigation">
-		  <!-- Brand and toggle get grouped for better mobile display -->
-		  <div class="navbar-header">
-		  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		    <ul class="nav navbar-nav">
-		      	<li><a href="index.html">Home</a></li>
-		      <li><a href="schedule.html">Schedule</a></li>
-		      <li><a href="calender.html">Calender</a></li>
-		      <li class="active"><a href="volunteers.html">Volunteers</a></li>
-		    <form class="navbar-form navbar-left" role="search">
-		      <div class="form-group">
-		        <input type="text" class="form-control" placeholder="Search">
-		      </div>
-		      <button type="submit" class="btn btn-default">Submit</button>
-		    </form>
-		  </div> <!-- /.navbar-collapse -->
-		</nav>
-		<div class="voluneers-container"></div>
-	</div> <!-- .container -->
-	
-	<div class="templates">
-		<div class="volunteer-template volunteer">
+	</head>
+	<body>
+		<div class = "container">
+			<a href="index.html"> <img class = "logo" src="img/logo2.jpg" alt="LOGO" height="230" width="1000"></a>
 
-			<img class="pic" src="" alt="">
-			<h2 class="name"></h2>
-			<p class="title"></p>
-			<p class="age"></p>
-			<p class="email"></p>
-			<p class="phone"></p>
-			<button type="button" class="btn btn-default more-info">More Info</button>
+			<nav class="navbar navbar-default" role="navigation">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex1-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-left">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="schedule.html">Schedule</a></li>
+						<li><a href="calender.html">Calender</a></li>
+						<li class="active"><a href="volunteers.html">Volunteers</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><form class="navbar-form navbar-nav navbar-right" role="search">
+						<div class="form-group">
+						<input type="text" class="form-control" placeholder="Search">
+						</div>
+						<button type="submit" class="btn btn-default">Submit</button>
+						</form></li>
+					</ul>
+				</div> <!-- /.navbar-collapse -->
+			</nav> <!-- nav bar -->
+			<div class="voluneers-container"></div>
+		</div> <!-- .container -->
 
-		</div> <!-- movie template -->
-	</div> <!-- .templates -->
+		<div class="templates">
+			<div class="volunteer-template volunteer">
+
+				<img class="pic" src="" alt="">
+				<h2 class="name"></h2>
+				<p class="title"></p>
+				<p class="age"></p>
+				<p class="email"></p>
+				<p class="phone"></p>
+				<button type="button" class="btn btn-default more-info">More Info</button>
+
+			</div> <!-- movie template -->
+		</div> <!-- .templates -->
 
 
 
-	<div class = "footer navbar-fixed-bottom">
-		&copy; 2013 INFO 343 WEB TECHNOLOGIES!!
-	</div>
-	 <!-- hot link to minified jQuery library, version 2.0.3 -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<div class = "footer navbar-fixed-bottom">
+			&copy; 2013 INFO 343 WEB TECHNOLOGIES!!
+		</div>
+		<!-- hot link to minified jQuery library, version 2.0.3 -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
-    <!-- Bootstrap JavaScript (if we need it) -->
-    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+		<!-- Bootstrap JavaScript (if we need it) -->
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
 
-        <!-- our own JavaScript files -->
-    <script src="js/utils.js"></script>
-    <script src="js/events.js"></script>
-    <script src="js/models.js"></script>
-    <script src="js/views.js"></script>
-    <script src="js/directory.js"></script>
-    <script src="js/volunteerView.js"></script>
-    <script src="js/directoryView.js"></script>
-    <script src="js/controller.js"></script>
-</body>
-</html>
+		<!-- our own JavaScript files -->
+		<script src="js/utils.js"></script>
+		<script src="js/events.js"></script>
+		<script src="js/models.js"></script>
+		<script src="js/views.js"></script>
+		<script src="js/directory.js"></script>
+		<script src="js/volunteerView.js"></script>
+		<script src="js/directoryView.js"></script>
+		<script src="js/controller.js"></script>
+	</body>
+	</html>
