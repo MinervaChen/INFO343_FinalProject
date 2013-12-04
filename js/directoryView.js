@@ -19,15 +19,14 @@
 			view.trigger('volunteerInfo', eventData);
 		});
 
-<<<<<<< HEAD
 		this.container.find('.edit-submit').click(function(){
 			var button = $(this);
 			var eventData =  button.attr('data-volunteer-id');
 			view.trigger('volunteerEdit', eventData);
-=======
+		});
+		
 		this.container.find('.edit').click(function(){
  			$("#editInformation").modal();
->>>>>>> 1f25e2f9b9474e5f80bea3a86269da6f9e45a1c7
 		});
 	};// afterRender()
 

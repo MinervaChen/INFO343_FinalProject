@@ -25,6 +25,7 @@ p {
 .hidden-submit{
     display: none;
 }
+
 .head {
     margin: 5px;
     padding: 5px;
@@ -33,7 +34,7 @@ p {
 
 .container {
     background-color: white;
-    margin: 0px;
+    margin: 0 auto;
     padding: 0px;
 }
 
@@ -43,6 +44,8 @@ p {
 
 .volunteer {
     float: left;
+    text-align: center;
+    padding: 10px;
 }
 
 .volunteer img {
@@ -68,11 +71,14 @@ p {
 }
 
 .navbar-right {
-    float: right;
+    padding-right: 15px;
 }
 
 .logo{
+    text-align: center;
     background-color: black;
+    width: auto !important;
+    width: 100%;
     max-width: 100%;
     height: auto;
     opacity: .9;
