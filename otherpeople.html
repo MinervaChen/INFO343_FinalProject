@@ -26,10 +26,10 @@
 		  <div class="navbar-header">
 		  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		    <ul class="nav navbar-nav">
-		      	<li class="active"><a href="index.html">Home</a></li>
+		      	<li><a href="index.html">Home</a></li>
 		      <li><a href="schedule.html">Schedule</a></li>
 		      <li><a href="calender.html">Calender</a></li>
-		      <li class="dropdown">
+		      <li class="dropdown active">
 		      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Staff <b class="caret"></b></a>
 		        	<ul class="dropdown-menu">
 		          		<li><a href="volunteers.html">Volunteer</a></li>
@@ -46,16 +46,23 @@
 		    </form>
 		  </div><!-- /.navbar-collapse -->
 		</nav>
-	</div><!-- head -->
-		<div class = "content-box">
-			<div class="row">
-  				<div class="col-md-4"><a href="schedule.html"> <img class = "logo" src="img/question.jpg" alt="question" height="300" width="250"></a><br>Schedule</div>
-  				<div class="col-md-4"><a href="calender.html"> <img class = "logo" src="img/question.jpg" alt="question" height="300" width="250"></a><br>Calender</div>
- 				<div class="col-md-4"><a href="staff.html"> <img class = "logo" src="img/question.jpg" alt="question" height="300" width="250"></a><br>Staff</div>
-			</div>
-		</div>
+		<div class="voluneers-container"></div>
+	</div> <!-- .container -->
+	
+	<div class="templates">
+		<div class="volunteer-template volunteer">
 
-	</div>
+			<img class="pic" src="" alt="">
+			<h2 class="name"></h2>
+			<p class="title"></p>
+			<p class="age"></p>
+			<p class="email"></p>
+			<p class="phone"></p>
+			<button type="button" class="btn btn-default more-info">More Info</button>
+
+		</div> <!-- movie template -->
+	</div> <!-- .templates -->
+
 
 
 	<div class = "footer navbar-fixed-bottom">
@@ -66,6 +73,15 @@
 
     <!-- Bootstrap JavaScript (if we need it) -->
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-    <script src="lib/jquery-2.0.3/jquery-2.0.3.min.js"></script>
+
+        <!-- our own JavaScript files -->
+    <script src="js/utils.js"></script>
+    <script src="js/events.js"></script>
+    <script src="js/models.js"></script>
+    <script src="js/views.js"></script>
+    <script src="js/directory.js"></script>
+    <script src="js/volunteerView.js"></script>
+    <script src="js/directoryView.js"></script>
+    <script src="js/controller.js"></script>
 </body>
 </html>

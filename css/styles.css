@@ -18,10 +18,33 @@ p {
     margin: 5px;
     font-style: bold;
 }
+.modal-content{
+    color: white;
+    background-color: black;
+}
+.hidden-submit{
+    display: none;
+}
 .head {
     margin: 5px;
     padding: 5px;
     text-align: center;
+}
+
+.container {
+    background-color: white;
+}
+
+.volunteer-template {
+    display: none;
+}
+
+.volunteer {
+    float: left;
+}
+
+.volunteer img {
+    float: left;
 }
 
 .footer {
