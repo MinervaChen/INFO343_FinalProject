@@ -13,6 +13,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     padding: 10px;
+    color: black;
 }
 p {
     margin: 5px;
@@ -147,4 +148,8 @@ li {
 .button {
     padding: 40px;
     float: right;
+}
+
+.row {
+    color: black;
 }
