@@ -115,9 +115,16 @@ p {
 
 /*All the CSS for the schedule page*/
 
+.box-heading {
+    margin-left: 5%;
+}
+
 .shift {
     padding: 10px;
-    margin: 5%;
+    margin-top: 0%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
     border: 1px solid #DDDDDD;
     border-radius: 4px 4px 4px 4px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
