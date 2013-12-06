@@ -15,6 +15,7 @@ body {
     padding: 10px;
     color: black;
 }
+
 p {
     margin: 5px;
     font-style: bold;
@@ -95,11 +96,12 @@ p {
     width: 80%;
     padding: 20px;
 }
+
 .row{
     margin: 0 auto;
     font-variant: small-caps;
     color: white;
-}
+} 
 
 
 
@@ -148,8 +150,7 @@ h2 {
 }
 
 li {
-    padding: 5px;
-    padding-left: 10px;
+    float: center;
 }
 
 .button {
@@ -157,6 +158,16 @@ li {
     float: right;
 }
 
-.row {
-    color: black;
+.legend {
+   float: center;
+   margin-left: 38.5px;
 }
+
+.legend-list {
+    padding-bottom: 20px;
+}
+
+.picture {
+    overflow: scroll;
+}
+
