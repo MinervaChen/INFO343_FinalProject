@@ -46,7 +46,11 @@
 					</ul>
 				</div> <!-- /.navbar-collapse -->
 			</nav> <!-- nav bar -->
-			<div class="volunteers-container"></div>
+			<div class="row">
+				<button type="button" class="btn btn-default add-volunteer"><span class="glyphicon glyphicon-plus"></span>Add Volunteer</button>
+			</div>
+
+			<div class="row volunteers-container"></div>
 		</div> <!-- .container -->
 
 		<div class="modal fade" id="editInformation" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -65,10 +69,8 @@
 								<input type="text" class="form-control form-name">
 							</div>
 							<div class="form-group">
-								<!--<label for="title">Title</label> 
-								<input type="text" class="form-control form-title" placeholder="Position held at Pacific Science Center"> -->
-
-								<select name="titlelist" form="titleform">
+								<label for="title">Title</label> 
+								<select name="titlelist" class="form-control form-title" form="titleform">
 									<option value="Science Interpreter">Science Interpreter</option>
 								  	<option value="Science Interpreter 2">Science Interpreter 2</option>
 								  	<option value="Science Interpreter 3">Science Interpreter 3</option>
@@ -78,7 +80,7 @@
 								  	<option value="Discovery Corps Interpreter">Discovery Corps Interpreter</option>
 								  	<option value="Discovery Corps Senior Interpreter">Discovery Corps Senior Interpreter</option>
 								  	<option value="Discovery Corps Senior Interpreter 2">Discovery Corps Senior Interpreter 2</option>
-								</select>	
+								</select>
 							</div>
 
 							<div class="row">
@@ -88,7 +90,8 @@
 								</div>
 								<div class="form-group col-xs-6">
 									<label for="phone">Phone Number</label>
-									<input type="text" class="form-control form-phone" placeholder="Phone Number">                                                                </div>
+									<input type="text" class="form-control form-phone" placeholder="Phone Number"> </div>
+
 									<div class="form-group col-xs-6">
 										<label for="phone">Email</label>
 										<input type="text" class="form-control form-email">
@@ -138,6 +141,9 @@
 							</div><!--shifts-->
 						</div>
 						<div class="modal-footer">
+						<button type="button" class="btn btn-danger remove-button" data-dismiss="modal">
+								Remove
+							</button>
 							<button type="button" class="btn btn-default" data-dismiss="modal">
 								Close
 							</button>

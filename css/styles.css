@@ -21,10 +21,16 @@ p {
     margin: 5px;
     font-style: bold;
 }
+
 .modal-content{
     color: white;
     background-color: black;
 }
+
+.remove-button {
+    float: left;
+}
+
 .hidden-submit{
     display: none;
 }
@@ -41,6 +47,12 @@ p {
     padding: 0px;
 }
 
+.volunteers-container {
+    margin: 0 auto;
+    width: 100%;
+    overflow: auto;
+}
+
 .volunteer-template {
     display: none;
 }
@@ -49,10 +61,13 @@ p {
     float: left;
     text-align: center;
     padding: 10px;
+    width: 250px;
 }
 
 .volunteer img {
+    display: block;
     float: left;
+    margin: 0 auto;
 }
 
 .footer {
@@ -75,6 +90,19 @@ p {
 
 .navbar-right {
     padding-right: 15px;
+}
+
+.add-volunteer {
+    float: right;
+    margin-right: 10px;
+}
+
+.button-row {
+    width: auto !important;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    clear: all;
 }
 
 .logo{

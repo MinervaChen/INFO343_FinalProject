@@ -38,9 +38,9 @@ var View = {
 
 	setEdit: function(item, template) {
 		var modal = $("#editInformation");
-		var self = this;
 		template.find('.edit').attr('data-volunteer-id', item.id);
 		template.find('.edit').click(function() {
+			modal.find('.remove-button').show();
 			var button = $(this);
 			var id = button.attr('data-volunteer-id');
 			modal.modal();
@@ -61,16 +61,36 @@ var View = {
 			model.removeItem(id);
 			model.addItem({
 				id: id,
-				pic: 'img/stearns.img',
+				pic: 'img/stearns.jpg',
 				title: modal.find('.form-title').val(),
 				name: modal.find('.form-name').val(),
-				age: modal.find('.form-title').val(),
-				phone: modal.find('.form-age').val(),
+				age: modal.find('.form-age').val(),
+				phone: modal.find('.form-phone').val(),
 				email: modal.find('.form-email').val()
 			});
 			model.postJSON();
 			location.reload();
 		});	
+	},
+
+	setAdd: function(model) {
+		var modal = $("#editInformation");
+		$('.add-volunteer').click(function(){
+			modal.find('.remove-button').hide();
+			var id = model.length + 1;
+			modal.find('.finalSubmitButton').attr('data-volunteer-id', id);
+			var button = $(this);
+			modal.modal();
+		});
+	},
+
+	setRemove: function(model) {
+		var modal = $("#editInformation");
+		modal.find('.remove-button').click(function() {
+			var id = modal.find('.finalSubmitButton').attr('data-volunteer-id');
+			model.removeItem(id);
+			model.postJSON();
+		});
 	},
 
 	setController: function(controller) {

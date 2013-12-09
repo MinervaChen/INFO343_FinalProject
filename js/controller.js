@@ -17,6 +17,8 @@ $(function(){
 
 	onPageLoad(model, view);
 	view.onSubmit(model);
+	view.setAdd(model);
+	view.setRemove(model);
 });
 
 //function onSubmit(model) {

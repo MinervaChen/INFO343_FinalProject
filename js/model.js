@@ -13,6 +13,7 @@ var Model = {
 			$.each(items, function(idx, item) {
 				if (item.id != undefined)
 					self.items[item.id] = item;
+					self.length++;
 			});
 		});
 	},
@@ -110,6 +111,7 @@ function createModel(config) {
 	apply(config, model);
 
 	model.items = model.items || {};
+	model.length = model.length || 0;
 
 	model.build(model.url);
 	return model;
