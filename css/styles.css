@@ -192,6 +192,10 @@ li {
     overflow: scroll;
 }
 
+.time {
+    float: left;
+}
+
 .check-box {
     color: #000;
     text-align: left;
