@@ -1,42 +1,60 @@
-/* controller.js
-	Controller for directory.html
-*/
+// Main
 
 $(function(){
-	var directoryModel = createDirectoryModel({
+	Parse.initialize("o6jNbniL23Of8iukgR0goPcdYfIxP0X08CAZyfYH", "rBs9dEbTlY6DPv8Vxyhb4szyVYDlHLMswvISzRio");
+
+	$.ajaxSetup({async: false});
+
+	var model = createModel({
 		url: 'json/volunteers.json'
 	});
-
-	var directoryView = createDirectoryView({
-		model: directoryModel,
+	
+	var view = createView({
+		model: model,
 		template: $('.volunteer-template'),
-		container: $('.voluneers-container')
+		container: $('.volunteers-container')
 	});
 
-	// refresh to get new volunteers from server
-	directoryModel.refresh();
-
-	// when the directory view triggers 'moreInfo'
-	// open volunteer's information page
-	directoryView.on('volunteerInfo', function(data) {
-		alert("This currently does nothing!");
-	});
-
-	directoryView.on('volunteerEdit', function(data) {
-		var volunteer = volunteerModel.getIetm(data.volunteerID)
-		if (!volunteer)
-			throw 'Invalid volunteer "' + volunteerID + '"!';
-
-		volunteerModel.addItem({
-	        pic: volunteer.pic,
-	        name: volunteer.name,
-	        title: volunteer.title,
-	        age: volunteer.age,
-	        email: volunteer.email,
-	        phone: volunteer.phone
-	    });
-
-	})
-
-
+	onPageLoad(model, view);
+	view.onSubmit(model);
 });
+
+//function onSubmit(model) {
+//	var modal = $("#editInformation");
+//	modal.find('.finalSubmitButton').click(function() {
+//		var button = $(this);
+//		var id = button.attr('data-volunteer-id');
+//		model.removeItem(id);
+//		model.addItem({
+//			id: id,
+//			pic: 'img/stearns.img',
+//			title: modal.find('.form-title').val(),
+//			name: modal.find('.form-name').val(),
+//			age: modal.find('.form-title').val(),
+//			phone: modal.find('.form-age').val(),
+//			email: modal.find('.form-email').val()
+//		});
+//		model.postJSON();
+//		location.reload();
+//	});	
+//}
+
+
+function onPageLoad(model, view) {
+	items = model.getItems();
+	$.each(items, function(idx, item) {
+		var clonedTemplate = view.template.clone();
+		view.renderData(item, clonedTemplate);
+		view.setMoreInfo(item, clonedTemplate);
+		view.setEdit(item, clonedTemplate);
+		clonedTemplate.removeClass('volunteer-template');
+		view.container.append(clonedTemplate);
+	});
+}
+
+//function doOnSubmit(newItem) {
+//	model.removeItem(newItem[id]);
+//	model.addItem(newItem);
+//	model.postJSON();
+//	onRefresh();
+//}

@@ -1,7 +1,7 @@
 /*
     createVolunteerView()
 
-    Factory for a view that can render a given movie model.
+    Factory for a view that can render a given volunteer model.
     Uses TemplateView as its prototype and overrides render()
     to create the add to cart buttons for the various formats.
 

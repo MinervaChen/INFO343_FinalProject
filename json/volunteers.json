@@ -1,5 +1,6 @@
 [
     {
+        "id": 1,
         "pic": "img/stearns.jpg",
         "name": "Bob Ross",
         "title": "Painter",
@@ -8,6 +9,7 @@
         "phone": "(425) 337-2726"
     },
     {
+        "id": 2,
         "pic": "img/stearns.jpg",
         "name": "Nick Cage",
         "title": "Actor",
@@ -16,6 +18,7 @@
         "phone": "(425) 555-2526"
     },
     {
+        "id": 3,
         "pic": "img/stearns.jpg",
         "name": "Tom Jones",
         "title": "Singer",

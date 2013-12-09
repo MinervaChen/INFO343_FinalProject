@@ -9,6 +9,7 @@
 		<!-- tells the browser to get style information from styles.css in our 'css' sub-directory -->
 		<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/styles.css">
+		<script src="http://www.parsecdn.com/js/parse-1.2.13.min.js"></script>
 
 	</head>
 	<body>
@@ -49,7 +50,7 @@
 					</ul>
 				</div> <!-- /.navbar-collapse -->
 			</nav> <!-- nav bar -->
-			<div class="voluneers-container"></div>
+			<div class="volunteers-container"></div>
 		</div> <!-- .container -->
 
 		<div class="modal fade" id="editInformation" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -69,19 +70,19 @@
 							</div>
 							<div class="form-group">
 								<label for="title">Title</label>
-								<input type="text" class="form-control form-line1" placeholder="Position held at Pacific Science Center">
+								<input type="text" class="form-control form-title" placeholder="Position held at Pacific Science Center">
 							</div>
 							<div class="row">
 								<div class="form-group col-xs-3">
 									<label for="age">Age</label>
-									<input type="number" class="form-control form-zip" min="5" max="99">
+									<input type="number" class="form-control form-age" min="5" max="99">
 								</div>
 								<div class="form-group col-xs-6">
 									<label for="phone">Phone Number</label>
 									<input type="text" class="form-control form-phone" placeholder="Phone Number">                                                                </div>
 									<div class="form-group col-xs-6">
 										<label for="phone">Email</label>
-										<input type="text" class="form-control form-phone">
+										<input type="text" class="form-control form-email">
 									</div>
 								</div>
 								<input type="hidden" name="cart" id="jsonForm"/>
@@ -128,13 +129,8 @@
 
 			<!-- our own JavaScript files -->
 			<script src="js/utils.js"></script>
-			<script src="js/events.js"></script>
-			<script src="js/models.js"></script>
-			<script src="js/views.js"></script>
-			<script src="js/directory.js"></script>
-			<script src="js/volunteerView.js"></script>
-			<script src="js/directoryView.js"></script>
+			<script src="js/view.js"></script>
+			<script src="js/model.js"></script>
 			<script src="js/controller.js"></script>
-			<script src="js/mainFunctions.js"></script>
 		</body>
 		</html>

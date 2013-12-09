@@ -26,6 +26,7 @@
 		});
 		
 		this.container.find('.edit').click(function(){
+			
  			$("#editInformation").modal();
 		});
 	};// afterRender()
