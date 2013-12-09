@@ -3,6 +3,7 @@ Minerva Chen, Warner Chen, James Prow, Lina Thach*/
 /* Google web fonts 'Open Sans' (italic and normal) and 'Boogaloo' */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700);
 @import url(http://fonts.googleapis.com/css?family=Boogaloo);
+@import url(http://fonts.googleapis.com/css?family=Vollkorn);
 
 /* reset CSS file to reset browser default styling to a consistent starting point */
 @import url(reset.css);
@@ -10,7 +11,7 @@ Minerva Chen, Warner Chen, James Prow, Lina Thach*/
 body {
     background-image: url(../img/background.jpg);
     background-repeat: repeat;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Vollkorn', sans-serif;
     font-size: 18px;
     padding: 10px;
     color: black;
@@ -201,4 +202,8 @@ li {
     text-align: left;
 }
 
-
+.input-group {
+    width: 200px;
+    margin-left:auto;
+    margin-right:auto;
+}
