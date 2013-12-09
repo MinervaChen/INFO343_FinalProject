@@ -25,5 +25,131 @@
         "age": 70,
         "email": "tom@jones.org",
         "phone": "(425) 333-3333"
+    },
+        {
+        "id": 4,
+        "pic": "img/stearns.jpg",
+        "name": "Bob Ross",
+        "title": "Painter",
+        "age": 67,
+        "email": "bob@ross.org",
+        "phone": "(425) 337-2726"
+    },
+    {
+        "id": 5,
+        "pic": "img/stearns.jpg",
+        "name": "Nick Cage",
+        "title": "Actor",
+        "age": 43,
+        "email": "nick@cage.org",
+        "phone": "(425) 555-2526"
+    },
+    {
+        "id": 6,
+        "pic": "img/stearns.jpg",
+        "name": "Tom Jones",
+        "title": "Singer",
+        "age": 70,
+        "email": "tom@jones.org",
+        "phone": "(425) 333-3333"
+    },
+        {
+        "id": 7,
+        "pic": "img/stearns.jpg",
+        "name": "Bob Ross",
+        "title": "Painter",
+        "age": 67,
+        "email": "bob@ross.org",
+        "phone": "(425) 337-2726"
+    },
+    {
+        "id": 8,
+        "pic": "img/stearns.jpg",
+        "name": "Nick Cage",
+        "title": "Actor",
+        "age": 43,
+        "email": "nick@cage.org",
+        "phone": "(425) 555-2526"
+    },
+    {
+        "id": 9,
+        "pic": "img/stearns.jpg",
+        "name": "Tom Jones",
+        "title": "Singer",
+        "age": 70,
+        "email": "tom@jones.org",
+        "phone": "(425) 333-3333"
+    },
+        {
+        "id": 10,
+        "pic": "img/stearns.jpg",
+        "name": "Bob Ross",
+        "title": "Painter",
+        "age": 67,
+        "email": "bob@ross.org",
+        "phone": "(425) 337-2726"
+    },
+    {
+        "id": 11,
+        "pic": "img/stearns.jpg",
+        "name": "Nick Cage",
+        "title": "Actor",
+        "age": 43,
+        "email": "nick@cage.org",
+        "phone": "(425) 555-2526"
+    },
+    {
+        "id": 12,
+        "pic": "img/stearns.jpg",
+        "name": "Tom Jones",
+        "title": "Singer",
+        "age": 70,
+        "email": "tom@jones.org",
+        "phone": "(425) 333-3333"
+    },
+        {
+        "id": 13,
+        "pic": "img/stearns.jpg",
+        "name": "Bob Ross",
+        "title": "Painter",
+        "age": 67,
+        "email": "bob@ross.org",
+        "phone": "(425) 337-2726"
+    },
+    {
+        "id": 14,
+        "pic": "img/stearns.jpg",
+        "name": "Nick Cage",
+        "title": "Actor",
+        "age": 43,
+        "email": "nick@cage.org",
+        "phone": "(425) 555-2526"
+    },
+    {
+        "id": 15,
+        "pic": "img/stearns.jpg",
+        "name": "Tom Jones",
+        "title": "Singer",
+        "age": 70,
+        "email": "tom@jones.org",
+        "phone": "(425) 333-3333"
+    },
+        {
+        "id": 16,
+        "pic": "img/stearns.jpg",
+        "name": "Bob Ross",
+        "title": "Painter",
+        "age": 67,
+        "email": "bob@ross.org",
+        "phone": "(425) 337-2726"
+    },
+    {
+        "id": 17,
+        "pic": "img/stearns.jpg",
+        "name": "Nick Cage",
+        "title": "Actor",
+        "age": 43,
+        "email": "nick@cage.org",
+        "phone": "(425) 555-2526"
     }
 ]
