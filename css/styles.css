@@ -85,7 +85,6 @@ p {
     max-width: 100%;
     height: auto;
     opacity: .9;
-    border-radius: 4px 4px 4px 4px;
 }
 
 .logo:hover{
@@ -104,6 +103,10 @@ p {
     font-variant: small-caps;
     text-align: center;
     font-size: 20px;
+}
+
+.row img {
+    border-radius: 4px 4px 4px 4px;
 } 
 
 .dropdown-menu {
