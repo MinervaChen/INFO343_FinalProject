@@ -21,7 +21,7 @@
         "id": 3,
         "pic": "img/stearns.jpg",
         "name": "Hansel",
-        "title": "Discovery Corps Interpreter",
+        "title": "Discovery Interpreter",
         "age": 16,
         "email": "Hansel@gmail.com",
         "phone": "(425) 333-3333"
@@ -30,7 +30,7 @@
         "id": 4,
         "pic": "img/stearns.jpg",
         "name": "Anna",
-        "title": "Discovery Corps Interpreter",
+        "title": "Discovery Interpreter",
         "age": 14,
         "email": "Anna@gmail.com",
         "phone": "(425) 337-2726"
@@ -201,7 +201,7 @@
         "id": 23,
         "pic": "img/stearns.jpg",
         "name": "Hansel",
-        "title": "Discovery Corps Interpreter",
+        "title": "Discovery Interpreter",
         "age": 16,
         "email": "Hansel@gmail.com",
         "phone": "(425) 333-3333"
@@ -210,7 +210,7 @@
         "id": 24,
         "pic": "img/stearns.jpg",
         "name": "Anna",
-        "title": "Discovery Corps Interpreter",
+        "title": "Discovery Interpreter",
         "age": 14,
         "email": "Anna@gmail.com",
         "phone": "(425) 337-2726"
